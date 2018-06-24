@@ -1,0 +1,7 @@
+def countvo(x):
+    x=x.swapcase()
+    leng=len(x)-1
+    new=''
+    for i in range(leng,-1,-1):
+            new=new+x[i]
+    return new
