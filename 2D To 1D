@@ -1,0 +1,9 @@
+def  sum_of_2d(li):
+    max=0
+    maxlist=[]
+    length=len(li[0])
+    for i in li:
+        max=0
+        for j in range(len(i)):
+            maxlist.append(i[j])
+    return sorted(maxlist)
