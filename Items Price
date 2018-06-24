@@ -1,0 +1,8 @@
+def items_price(a,b):
+    lena=len(a)
+    c=a
+    for x in range(lena):
+        c[x]=a[x]*b[x]
+    result=sum(c)
+        
+    return result
