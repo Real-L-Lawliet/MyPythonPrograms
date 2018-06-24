@@ -1,0 +1,11 @@
+def  sum_of_2d(li):
+    biglist=[]
+    length=len(li[0])
+    for i in li:
+        smalllist=[]
+        for j in range(len(i)):
+            smalllist.append(i[j])
+        smalllist.sort(reverse=True)
+        biglist.append(smalllist)
+        
+    return biglist
