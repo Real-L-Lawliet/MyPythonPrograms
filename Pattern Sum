@@ -1,0 +1,9 @@
+def pattern_sum(a, b):
+    sum=0
+    c=[]
+    for i in range(1,b+1):
+        c.append('1'*i)
+    for i in c:
+        sum=sum+int(i)
+    sum=sum*a
+    return sum
