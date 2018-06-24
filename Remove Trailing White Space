@@ -1,0 +1,8 @@
+def strip(x):
+    index=0
+    l=len(x)-1
+    i=l
+    while x[i]==' ':
+        i=i-1
+    new=x[:i+1]
+    return new
