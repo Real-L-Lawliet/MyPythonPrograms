@@ -1,0 +1,10 @@
+def addeven(a,b):
+    c=[]
+    for i in a:
+        if i%2==0:
+            c.append(i)
+    for i in b:
+        if i%2==0:
+            c.append(i)
+    res=sum(c)
+    return res
