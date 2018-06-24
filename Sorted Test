@@ -1,0 +1,7 @@
+def Pali(x):
+    new=x
+    x=sorted(x)
+    if x==new:
+        return True
+    else:
+        return False
