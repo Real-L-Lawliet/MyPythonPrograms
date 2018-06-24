@@ -1,0 +1,9 @@
+def find_longest_word(x):
+    x=x.split()
+    longest=None
+    max=0
+    for i in x:
+        if max<=len(i):
+            max=len(i)
+            longest=i
+    return longest
