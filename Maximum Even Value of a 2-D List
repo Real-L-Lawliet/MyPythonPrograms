@@ -1,0 +1,8 @@
+def  max(li):
+    max=0
+    for i in li:
+        for j in range(len(i)):
+                       if i[j]%2==0 and max<i[j]:
+                           max=i[j]
+
+    return max
