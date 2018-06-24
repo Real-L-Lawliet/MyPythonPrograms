@@ -1,0 +1,8 @@
+def strip(x):
+    new=''
+    for i in x:
+        if i!=' ':
+            new=new+i
+        else:
+            continue
+    return new
