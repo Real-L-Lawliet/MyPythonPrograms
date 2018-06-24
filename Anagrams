@@ -1,0 +1,15 @@
+def test_for_anagrams(a,b):
+    a=a.lower()
+    b=b.lower()
+    len1=len(a)
+    len2=len(b)
+    x=[]
+    y=[]
+    for i in a:
+        x.append(ord(i))
+    for i in b:
+        y.append(ord(i))
+    if sorted(x)==sorted(y):
+        return True
+    else:
+        return False
