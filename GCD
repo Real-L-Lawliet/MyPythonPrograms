@@ -1,0 +1,10 @@
+def find_gcd(nums):
+    def gcd2(n1, n2):
+        for num in range(min(n1, n2), 0, -1):
+            if n1 % num == 0 and n2 % num == 0:
+                return num
+    n = len(nums)
+    if n == 0: return "ERROR"
+    if n == 1: return nums[0]
+    if n >= 2: return gcd2(find_gcd(nums[:n//2]), find_gcd(nums[n//2:]))
+
