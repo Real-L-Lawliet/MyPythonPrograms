@@ -1,0 +1,9 @@
+def  sum_of_2d(li):
+    sum=0
+    ave=0
+    for i in li:
+        for j in range(len(i)):
+                       sum=sum+i[j]
+                       ave=ave+1
+
+    return sum/ave
