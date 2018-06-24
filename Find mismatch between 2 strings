@@ -1,0 +1,18 @@
+def find_mismatch(s1,s2):
+    s1=s1.lower()
+    s2=s2.lower()
+    leng1=len(s1)
+    leng2=len(s2)
+    error=0
+    if leng1==leng2:
+        for i in range(0,leng1):
+            if s1[i]!=s2[i]:
+                error=error+1
+    
+    if leng1==leng2 and s1==s2:
+        return 0
+    if leng1==leng2 and error==1:
+        return 1
+    if leng1!=leng2 or error>1:
+        return 2
+    
