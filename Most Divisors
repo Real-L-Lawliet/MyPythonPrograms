@@ -1,0 +1,16 @@
+def find_integer_with_most_divisors(loi):
+    a=[]
+    maxsum=0
+    max=0
+    for i in loi:
+        sum=0
+        for j in range(1,i+1):
+            if i%j==0:
+                sum=sum+1
+                if sum==maxsum:
+                    continue
+                elif sum>maxsum:
+                        maxsum=sum
+                        max=i
+                
+    return max
