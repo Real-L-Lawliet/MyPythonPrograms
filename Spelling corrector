@@ -1,0 +1,52 @@
+def spelling_corrector(s1,s2):
+    def single_insert_or_delete(a,b):
+            a=a.lower()
+            b=b.lower()
+            l1=len(a)
+            l2=len(b)
+            if a==b:
+                return 0
+            
+            elif l1-l2==-1:
+                if a==b[:-1] or a==b[1:]:
+                    return 1
+                else:
+                    for i in range(l2):
+                        if a==b[:i]+b[i+1:]:
+                            return 1
+                    else:
+                        return 2
+            elif l1-l2==1:
+                if a==b[:-1] or a==b[1:]:
+                    return 1
+                else:
+                    for i in range(l1):
+                        if b==a[:i]+a[i+1:]:
+                            return 1
+                    else:
+                        return 2
+            elif l1 == l2:
+                 for i in range(l2):
+                     if a[:i] + a[i+1:] == b[:i] + b[i+1:]:
+                         return 1
+            else:
+                return 2
+            
+    s1=s1.lower()
+    s1=s1.split()
+    length=len(s1)
+    out=[]
+    numb=[]
+    for i in range(length):
+        for j in s2:
+            if single_insert_or_delete(s1[i],j)==1:
+                if i not in numb and s1[i] not in s2:
+                    out.append(j)
+                    numb.append(i)
+    lo=len(numb)           
+    for k in range(0,lo):
+        s1[numb[k]]=out[k]
+        
+    final= ' '.join(s1)
+    final=final.lower()
+    return final
