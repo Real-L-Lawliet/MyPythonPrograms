@@ -1,0 +1,8 @@
+def countvo(x,c):
+    c=c.lower()
+    x=x.lower()
+    count=0
+    for i in x:
+        if c==i:
+            count=count+1
+    return count
