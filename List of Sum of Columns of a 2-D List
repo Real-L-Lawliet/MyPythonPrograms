@@ -1,0 +1,11 @@
+def sumcol(li):
+    sum=0
+    final=[]
+    le = len(li[1])
+    for i in range(0,le):
+        sum = 0
+        for j in li:
+            sum = sum + j[i]
+
+        final.append(sum)
+    return final
