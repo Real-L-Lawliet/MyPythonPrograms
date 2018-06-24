@@ -1,0 +1,9 @@
+def Pali(x):
+    new=''
+    x=x.lower()
+    for i in x:
+        new=i+new
+    if x==new:
+        return True
+    else:
+        return False
