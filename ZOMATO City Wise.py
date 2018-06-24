@@ -40,9 +40,9 @@ def zomato_citywise(x):
         try:
             for j in range(5):
                 top.append(d[i][keys[j]])
-            print('\nTop 5 in order of their ranks:\n',top)
+            print('\nTop 5 Restaurants in order of their ranks:\n',top)
         except:
-            print('\nTop',len(top),'Restaurant order of their ranks:\n',top)
+            print('\nTop',len(top),'Restaurants order of their ranks:\n',top)
             continue
 
 
