@@ -1,0 +1,11 @@
+def countvo(x):
+    leng=len(x)-1
+    new=''
+    x=x.split()
+    for i in x:
+        for j in range(len(i)-1,-1,-1):
+            new=new+i[j]
+        new=new+' '
+    last=len(new)-1
+    new=new[0:last]
+    return new
