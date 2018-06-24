@@ -1,0 +1,7 @@
+def unique_common(a, b):
+    c=[]
+    final=[]
+    for i in a:
+        if i in b and i not in c:
+            c.append(i)
+    return sorted(c)
