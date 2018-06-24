@@ -1,0 +1,15 @@
+def countvo(x):
+    x=x.lower()
+    leng=len(x)-1
+    new=[]
+    sum=0
+    max=0
+    maxc=0
+    for i in x:
+        if i!=' ':
+            max=x.count(i)
+            if max>=maxc:
+                maxc=max
+                sum=i
+            
+    return sum
