@@ -1,0 +1,10 @@
+def crazy_list(a):
+    f=len(a)-1
+    c=[]
+    b=a[-1:0:-1]
+    c.extend(b)
+    c.append(a[f])
+    if a==c:
+        return True
+    else:a
+        return False
