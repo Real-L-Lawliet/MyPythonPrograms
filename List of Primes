@@ -1,0 +1,13 @@
+def list_of_primes(n):
+    prime=False
+    a=[2]
+    for i in range(3,n):
+        prime= True
+        for j in range(2,i):
+            if i%j==0:
+                prime=False
+                break
+        if prime:
+            if i not in a:
+                a.append(i)
+    return a
