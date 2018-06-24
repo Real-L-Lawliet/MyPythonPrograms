@@ -1,0 +1,27 @@
+def single_insert_or_delete(a,b):
+    a=a.lower()
+    b=b.lower()
+    l1=len(a)
+    l2=len(b)
+    if a==b:
+        return 0
+    elif l1-l2==-1:
+        if a==b[:-1] or a==b[1:]:
+            return 1
+        else:
+            for i in range(l2):
+                if a==b[:i]+b[i+1:]:
+                    return 1
+            else:
+                return 2
+    elif l1-l2==1:
+        if a==b[:-1] or a==b[1:]:
+            return 1
+        else:
+            for i in range(l1):
+                if b==a[:i]+a[i+1:]:
+                    return 1
+            else:
+                return 2
+    else:
+        return 2
