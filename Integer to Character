@@ -1,0 +1,5 @@
+def asc(n):
+    asc=(chr(n))
+    return asc
+
+print(asc(5))
