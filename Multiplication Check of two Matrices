@@ -1,0 +1,13 @@
+def  sum_of_2d(a,b):
+    maxcol=0
+    multi=0
+    for i in a:
+        if len(i)>maxcol:
+            maxcol=len(i)
+    maxrow=len(b)
+        
+    if maxrow==maxcol:
+        return True
+    else:
+        return False
+
