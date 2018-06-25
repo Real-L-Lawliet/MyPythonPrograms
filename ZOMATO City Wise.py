@@ -15,7 +15,7 @@ def zomato_citywise(x):
         try:
             for j in range(len(i['restaurants'])):
                 try:
-                    sub_d = {}
+                    
                     city = i['restaurants'][j]['restaurant']['location']['city']
                     name = i['restaurants'][j]['restaurant']['name']
                     votes = i['restaurants'][j]['restaurant']['user_rating']['votes']
@@ -35,7 +35,7 @@ def zomato_citywise(x):
         top = []
         keys = list(d[i].keys())
         keys = sorted(keys,reverse=True)
-        print('-----------------------------------------\nFor',i,':\n','Best Restaurant:',d[i][keys[0]])
+        print('-----------------------------------------\nFor',i,':\n','\nTotal Restaurants: ',len(keys),'\nBest Restaurant:',d[i][keys[0]])
 
         try:
             for j in range(5):
